@@ -139,10 +139,10 @@ Pod::Spec.new do |s|
         '${PODS_ROOT}/TrustWalletCore/trezor-crypto/crypto',
       'SYSTEM_HEADER_SEARCH_PATHS' => '$(inherited) ' \
         '/usr/local/include ' \
-        '${PODS_ROOT}/TrustWalletCore/include ' \
-        '${PODS_ROOT}/TrustWalletCore/trezor-crypto/include ' \
-        "${PODS_ROOT}/TrustWalletCore/#{protobuf_source_dir}/src " \
-        "${PODS_ROOT}/TrustWalletCore/#{include_dir} ",
+        '${PODS_ROOT}/ZATrustWalletCore/include ' \
+        '${PODS_ROOT}/ZATrustWalletCore/trezor-crypto/include ' \
+        "${PODS_ROOT}/ZATrustWalletCore/#{protobuf_source_dir}/src " \
+        "${PODS_ROOT}/ZATrustWalletCore/#{include_dir} ",
       'GCC_WARN_UNUSED_FUNCTION' => 'NO',
       'GCC_WARN_64_TO_32_BIT_CONVERSION' => 'NO',
       'CLANG_CXX_LANGUAGE_STANDARD' => 'c++17',
