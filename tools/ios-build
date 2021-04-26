@@ -15,7 +15,7 @@ function buildDevices() {
     mkdir -p "$BUILD_FOLDER_DEVICE"
     cmake -H. -B "$BUILD_FOLDER_DEVICE" -DCMAKE_TOOLCHAIN_FILE=cmake/ios.toolchain.cmake \
                                         -DPLATFORM=OS64 \
-                                        -DDEPLOYMENT_TARGET=10.0 \
+                                        -DDEPLOYMENT_TARGET=11.0 \
                                         -DCMAKE_BUILD_TYPE=Release
     make -C "$BUILD_FOLDER_DEVICE" $TARGETS
 }
